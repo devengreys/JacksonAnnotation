@@ -1,0 +1,13 @@
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+public class Student {
+	public int id;
+	   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+	   public Date birthDate;
+	   Student(int id, Date birthDate){
+	      this.id = id;
+	      this.birthDate = birthDate;
+	   } 
+}

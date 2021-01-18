@@ -1,0 +1,14 @@
+import com.fasterxml.jackson.annotation.JsonFilter;
+
+@JsonFilter("nameFilter")
+class Student {
+   public int id;
+   public int rollNo;
+   public String name;
+
+   Student(int id, int rollNo, String name) {
+      this.id = id;
+      this.rollNo = rollNo;
+      this.name = name;
+   }   
+}

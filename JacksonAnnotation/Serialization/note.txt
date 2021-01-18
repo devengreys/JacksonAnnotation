@@ -1,0 +1,13 @@
+@JsonAnyGetter allows a getter method to return Map which is then used to serialize the additional properties of JSON in the similar fashion as other properties.
+
+@JsonGetter allows a specific method to be marked as getter method.
+
+@JsonPropertyOrder allows a specific order to be preserved while serializing a JSON object.
+
+@JsonRawValue allows to serialize a text without escaping or without any decoration.
+
+@JsonValue allows to serialize an entire object using its single method.
+
+@JsonRootName allows to have a root node specified over the JSON. We need to enable wrap root value as well.
+
+@JsonSerialize is used to specify custom serializer to marshall the json object.

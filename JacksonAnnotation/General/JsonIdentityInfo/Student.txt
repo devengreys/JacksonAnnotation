@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+@JsonIdentityInfo(
+		   generator = ObjectIdGenerators.PropertyGenerator.class,
+		   property = "id")
+		class Student { 
+		   public int id;
+		   public int rollNo;
+		   public String name;
+		   public List<Book> books;
+		   
+		   Student(int id, int rollNo, String name){
+		      this.id = id;
+		      this.rollNo = rollNo;
+		      this.name = name;
+		      this.books = new ArrayList<Book>();
+		   }
+		   public void addBook(Book book){
+		      books.add(book);
+		   }
+		}

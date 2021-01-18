@@ -1,0 +1,16 @@
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class Student {
+	public int id;
+	   @JsonIgnore
+	   public String systemId;
+	   public int rollNo;
+	   public String name;
+
+	   Student(int id, int rollNo, String systemId, String name){
+	      this.id = id;
+	      this.systemId = systemId;
+	      this.rollNo = rollNo;
+	      this.name = name;
+	   }
+}

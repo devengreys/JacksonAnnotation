@@ -1,0 +1,12 @@
+@JsonCreator is used to fine tune the constructor or factory method used in deserialization. We'll be using @JsonProperty as well to achieve the same. In the example below, we are matching an json with different format to our class by defining the required property names.
+
+@JacksonInject is used when a property value is to be injected instead of being parsed from Json input. In the example below, we are inserting a value into object instead of parsing from the Json.
+
+@JsonAnySetter allows a setter method to use Map which is then used to deserialize the additional properties of JSON in the similar fashion as other properties.
+
+@JsonSetter allows a specific method to be marked as setter method.
+
+@JsonDeserialize is used to specify custom deserializer to unmarshall the json object.
+
+@JsonEnumDefaultValue is used to deserialize an unknown enum value using a default value.
+

@@ -1,0 +1,17 @@
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class Student {
+	private int id;
+	   Student(){}
+	   Student(int id){
+	      this.id = id;
+	   }
+	   @JsonProperty("id")
+	   public int getTheId() {
+	      return id;
+	   }
+	   @JsonProperty("id")
+	   public void setTheId(int id) {
+	      this.id = id;
+	   }   
+}

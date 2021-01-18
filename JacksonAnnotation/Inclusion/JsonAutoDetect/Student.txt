@@ -1,0 +1,12 @@
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+class Student { 
+   private int id; 
+   private String name;
+
+   Student(int id,String name) {
+      this.id = id;
+      this.name = name;
+   }   
+}

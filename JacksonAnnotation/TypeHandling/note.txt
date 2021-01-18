@@ -1,0 +1,5 @@
+@JsonTypeInfo is used to indicate details of type information which is to be included in serialization and de-serialization.
+
+@JsonSubTypes is used to indicate subtypes of types annotated.
+
+@JsonTypeName is used to set type names to be used for annotated class.

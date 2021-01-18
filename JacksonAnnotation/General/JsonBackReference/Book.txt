@@ -1,0 +1,15 @@
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+public class Book {
+	public int id;
+	   public String name;
+
+	   Book(int id, String name, Student owner) {
+	      this.id = id;
+	      this.name = name;
+	      this.owner = owner;
+	   }
+
+	   @JsonManagedReference
+	   public Student owner;
+}

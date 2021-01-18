@@ -1,0 +1,16 @@
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+@JsonIdentityInfo(
+		   generator = ObjectIdGenerators.PropertyGenerator.class,
+		   property = "id")
+		class Book{
+		   public int id;
+		   public String name;
+
+		   Book(int id, String name, Student owner){
+		      this.id = id;
+		      this.name = name;
+		      this.owner = owner;
+		   }
+		   public Student owner;
+		}

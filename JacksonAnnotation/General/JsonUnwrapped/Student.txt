@@ -1,0 +1,15 @@
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
+
+public class Student {
+	public int id;   
+	   @JsonUnwrapped
+	   public Name name;
+	   Student(int id, Name name){
+	      this.id = id;
+	      this.name = name;
+	   }
+	   static class Name {
+	      public String first;
+	      public String last;
+	   }
+}

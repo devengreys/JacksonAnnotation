@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+public class Student {
+	public int rollNo;
+	   public String name;
+
+	   @JsonBackReference
+	   public List<Book> books;
+
+	   Student(int rollNo, String name){
+	      this.rollNo = rollNo;
+	      this.name = name;
+	      this.books = new ArrayList<Book>();
+	   }
+	   public void addBook(Book book){
+	      books.add(book);
+	   }
+}

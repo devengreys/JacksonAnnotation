@@ -1,0 +1,15 @@
+@JsonProperty is used to mark non-standard getter/setter method to be used with respect to json property.
+
+@JsonFormat is used to specify format while serialization or de-serialization. It is mostly used with Date fields.
+
+@JsonUnwrapped is used to unwrap values of objects during serialization or de-serialization.
+
+@JsonView is used to control values to be serialized or not.
+
+@JsonManagedReferences and JsonBackReferences are used to display objects with parent child relationship. @JsonManagedReferences is used to refer to parent object and @JsonBackReferences is used to mark child objects.
+
+@JsonManagedReferences and JsonBackReferences are used to display objects with parent child relationship. @JsonManagedReferences is used to refer to parent object and @JsonBackReferences is used to mark child objects.
+
+@JsonIdentityInfo is used when objects have parent child relationship. @JsonIdentityInfo is used to indicate that object identity will be used during serialization/de-serialization.
+
+@JsonFilter is used to apply filter during serialization/de-serialization like which properties are to be used or not.
