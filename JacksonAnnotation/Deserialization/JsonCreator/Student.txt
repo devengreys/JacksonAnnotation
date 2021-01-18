@@ -1,0 +1,13 @@
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class Student {
+	public String name; 
+	   public int rollNo; 
+
+	   @JsonCreator 
+	   public Student(@JsonProperty("theName") String name, @JsonProperty("id") int rollNo){
+	      this.name = name; 
+	      this.rollNo = rollNo; 
+	   }
+}

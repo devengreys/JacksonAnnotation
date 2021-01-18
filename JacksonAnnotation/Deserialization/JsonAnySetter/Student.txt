@@ -1,0 +1,18 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+
+public class Student {
+	private Map<String, String> properties; 
+	   public Student(){ 
+	      properties = new HashMap<>(); 
+	   }  
+	   public Map<String, String> getProperties(){ 
+	      return properties; 
+	   } 
+	   @JsonAnySetter 
+	   public void add(String property, String value){ 
+	      properties.put(property, value); 
+	   }  
+}
