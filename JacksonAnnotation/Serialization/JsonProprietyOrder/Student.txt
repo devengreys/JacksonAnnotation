@@ -1,6 +1,6 @@
-import com.fasterxml.jackson.annotation.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-@JsonRootName(value = "student") 
+@JsonPropertyOrder({ "rollNo", "name" })
 class Student {
    private String name; 
    private int rollNo; 
